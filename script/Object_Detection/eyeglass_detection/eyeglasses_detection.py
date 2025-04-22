@@ -101,7 +101,7 @@ def judge_eyeglass(img):
         judge = False
     print(judge)
     return judge
-q
+
 predictor_path = "script/Object_Detection/eyeglass_detection/shape_predictor_5_face_landmarks.dat"
 detector = dlib.get_frontal_face_detector()
 predictor = dlib.shape_predictor(predictor_path)

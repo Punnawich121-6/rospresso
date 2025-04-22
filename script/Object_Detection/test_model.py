@@ -8,7 +8,7 @@ cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()
     if not ret:
-        print("ไม่สามารถเข้าถึงกล้องได้")
+        print("Can't access to camera !")
         break
 
     results = model(frame)
