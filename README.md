@@ -20,13 +20,13 @@ We believe in learning through doing — and competitions like ROS @Home provide
 
 ## 👥 Team Members
 
-| Name                       | Role                                      |
-|----------------------------|-------------------------------------------|
-| **Theeraphat Tonglertwong** | Team Leader, Hardware Engineer            |
-| **Phubadine Mehom**         | AI & Object Detection Developer           |
-| **Phubet Jitpilai**         | Speech Recognition Developer              |
-| **Punnawit Seangsuriyakat**| Navigation System Developer               |
-| **Sirawit Polkhumkaew**     | Hardware Engineer                         |
+| Name                        | Role                                      |
+|-----------------------------|-------------------------------------------|
+| **Theeraphat Tonglertwong** | Sleeping Engineer                         |
+| **Phubadine Mehom**         | Sleeping Engineer                         |
+| **Phubet Jitpilai**         | Sleeping Engineer                         |
+| **Punnawit Seangsuriyakat** |  Sleeping Engineer                        |
+| **Sirawit Polkhumkaew**     | Sleeping Engineer                         |
 
 ---
 
