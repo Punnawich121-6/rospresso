@@ -52,9 +52,7 @@ Thank you for visiting our repository! 🚀
 
 
 
-# Roadmap🚀
----
-# ROS2 LIDAR Robot Development
+# Roadmap🚀 ROS2 LIDAR Robot Development
 
 This is a development plan and guide for integrating **LIDAR** with a robot using **ROS2**. It covers the basic integration with **TF**, **odometry**, **SLAM**, and other sensors. The goal is to create a fully functional robot capable of autonomous navigation, mapping, and localization.
 
@@ -207,11 +205,11 @@ Integrating other sensors, such as IMU, cameras, or additional LIDAR units, can 
 ### 8. To-Do List
 
 #### Tasks Completed:
-- [x] **LIDAR sensor setup and integration** with ROS2 (RPLIDAR example)
-- [x] **TF integration** to link the LIDAR frame with global map/frame
-- [x] **Odometry setup** for basic movement tracking
-- [x] **AMCL localization** setup for improving robot position accuracy
-- [x] **SLAM** integration for map creation and navigation
+- [ ] **LIDAR sensor setup and integration** with ROS2 (RPLIDAR example)
+- [ ] **TF integration** to link the LIDAR frame with global map/frame
+- [ ] **Odometry setup** for basic movement tracking
+- [ ] **AMCL localization** setup for improving robot position accuracy
+- [ ] **SLAM** integration for map creation and navigation
 
 #### Tasks In Progress:
 - [ ] **IMU sensor integration** with **robot_localization** for better position tracking
