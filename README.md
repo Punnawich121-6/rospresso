@@ -4,6 +4,7 @@ Welcome to the official repository of **Aokkai Everyday**, a student-led robotic
 
 ---
 ## Code for Gazebo
+install:
   ```bash
 source ~/.bashrc
 cd ~/turtlebot3_ws/src/
@@ -16,17 +17,17 @@ source ~/.bashrc
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
-### Terminal 2
+Terminal 2
 ```bash
 source ~/.bashrc
 ros2 run turtlebot3_teleop teleop_keyboard
 ```
-### Terminal 3
+Terminal 3
 ```bash
 source ~/.bashrc
 ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
-### Terminal 4
+Terminal 4
 ```bash
 source ~/.bashrc
 ros2 run nav2_map_server map_saver_cli -f ~/map
@@ -34,16 +35,16 @@ ros2 run nav2_map_server map_saver_cli -f ~/map
 
 ## Code for Nav
 
-### Terminal 1
+Terminal 1
 ```bash
 source ~/.bashrc
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
-### Terminal 2
+Terminal 2
 ```bash
 source ~/.bashrc
-$ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
+ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
    ```
 
 
