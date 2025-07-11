@@ -33,8 +33,9 @@ ros2 run nav2_map_server map_saver_cli -f ~/map
    ```
 
 ## Code for Nav
-```bash
+
 ### Terminal 1
+```bash
 source ~/.bashrc
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
