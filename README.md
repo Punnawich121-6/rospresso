@@ -9,21 +9,25 @@ source ~/.bashrc
 cd ~/turtlebot3_ws/src/
 git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 cd ~/turtlebot3_ws && colcon build --symlink-install
-
+```
 # Terminal 1
+```bash
 source ~/.bashrc
 export TURTLEBOT3_MODEL=burger
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-
+```
 # Terminal 2
+```bash
 source ~/.bashrc
 ros2 run turtlebot3_teleop teleop_keyboard
-
+```
 # Terminal 3
+```bash
 source ~/.bashrc
 ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
-
+```
 # Terminal 4
+```bash
 source ~/.bashrc
 ros2 run nav2_map_server map_saver_cli -f ~/map
    ```
@@ -34,7 +38,7 @@ ros2 run nav2_map_server map_saver_cli -f ~/map
 # Terminal 1
 source ~/.bashrc
 ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
-
+```
 
 # Terminal 2
 source ~/.bashrc
