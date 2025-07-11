@@ -3,6 +3,44 @@
 Welcome to the official repository of **Aokkai Everyday**, a student-led robotics team from **Khon Kaen University, Thailand**, participating in the Thailand Open ROS 2025 competition under the @Home category.
 
 ---
+## Code for Gazebo
+  ```bash
+source ~/.bashrc
+cd ~/turtlebot3_ws/src/
+git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+cd ~/turtlebot3_ws && colcon build --symlink-install
+
+# Terminal 1
+source ~/.bashrc
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
+# Terminal 2
+source ~/.bashrc
+ros2 run turtlebot3_teleop teleop_keyboard
+
+# Terminal 3
+source ~/.bashrc
+ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
+
+# Terminal 4
+source ~/.bashrc
+ros2 run nav2_map_server map_saver_cli -f ~/map
+   ```
+
+## Code for Nav
+  ```bash
+
+# Terminal 1
+source ~/.bashrc
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+
+
+# Terminal 2
+source ~/.bashrc
+$ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True map:=$HOME/map.yaml
+   ```
+
 
 ## 🎯 Team Mission
 
