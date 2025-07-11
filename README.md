@@ -4,14 +4,14 @@ Welcome to the official repository of **Aokkai Everyday**, a student-led robotic
 
 ---
 ## Code for Gazebo
-install:
+install
   ```bash
 source ~/.bashrc
 cd ~/turtlebot3_ws/src/
 git clone -b humble https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 cd ~/turtlebot3_ws && colcon build --symlink-install
 ```
-### Terminal 1
+Terminal 1
 ```bash
 source ~/.bashrc
 export TURTLEBOT3_MODEL=burger
