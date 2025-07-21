@@ -10,7 +10,7 @@ webcam = cv2.VideoCapture(0)
 while True:
  
     success, image_bgr = webcam.read()
-    # image_org = image_bgr.copy()
+
     image_bw = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2GRAY)
 
     face_classifier = cv2.CascadeClassifier(face_cascade)
@@ -27,6 +27,6 @@ while True:
     k = cv2.waitKey(5) & 0xFF
     if k==27:  # ESC
         break
-    
+
 cv2.imshow("Faces found", image_bgr)
 cv2.waitKey(1) 

@@ -1,15 +1,9 @@
 import torch
 import cv2
 import numpy as np
-from tensorflow.keras.models import load_model
+from tensorflow.keras.models import load_model # type: ignore
 from sklearn.cluster import KMeans
 
-# import rospy
-# from geometry_msgs.msg import Twist
-
-
-
-# ----------- โหลด YOLOv5 ------------
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s', pretrained=True)
 model.eval()
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
