@@ -3,6 +3,13 @@
 Welcome to the official repository of **Aokkai Everyday**, a student-led robotics team from **Khon Kaen University, Thailand**, participating in the Thailand Open ROS 2025 competition under the @Home category.
 
 ---
+
+## Show LiDAR data
+  ```bash
+  ros2 launch turtlebot3_bringup rviz2.launch.py
+```
+
+
 ## Code for Gazebo
 install
   ```bash
