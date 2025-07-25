@@ -3,6 +3,9 @@
 Welcome to the official repository of **Aokkai Everyday**, a student-led robotics team from **Khon Kaen University, Thailand**, participating in the Thailand Open ROS 2025 competition under the @Home category.
 
 ---
+  ```bash
+  source ~/.bashrc
+```
 
 ## Show LiDAR data
   ```bash
@@ -11,44 +14,48 @@ Welcome to the official repository of **Aokkai Everyday**, a student-led robotic
 
 ## Code for Bringup
 
-ssh (remote pc)
+SSH (Remote pc)
 ```bash
   ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
 ```
 
-bring up (turtlebot3)
+Bring up (turtlebot3)
 ```bash
   ros2 launch turtlebot3_bringup robot.launch.py
 ```
-show topic
+Show topic
 ```bash
   ros2 topic list
 ```
 
-RViz
+Show LiDAR data
 ```bash
   ros2 launch turtlebot3_bringup rviz2.launch.py 
 ```
 
-teleop (remote pc)
+Teleop (Remote PC)
 ```bash
   ros2 run turtlebot3_teleop teleop_keyboard
 ```
+
 ## Code for SLAM
-ssh (remote pc)
+SSH (Remote pc)
 ```bash
   ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
 ```
 
-bring up (turtlebot3)
+Bring up (Turtlebot3)
 ```bash
   ros2 launch turtlebot3_bringup robot.launch.py
 ```
 
-cartographer (remote pc)
+Cartographer (Remote PC)
 ```bash
   ros2 launch turtlebot3_cartographer cartographer.launch.py
+```
 
+Save Map (Remote PC)
+```bash
   ros2 run nav2_map_server map_saver_cli -f ~/map
 ```
 
