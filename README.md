@@ -7,10 +7,6 @@ Welcome to the official repository of **Aokkai Everyday**, a student-led robotic
   source ~/.bashrc
 ```
 
-## Show LiDAR data
-  ```bash
-  ros2 launch turtlebot3_bringup rviz2.launch.py
-```
 
 ## Code for Bringup
 
