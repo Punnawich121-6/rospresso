@@ -9,6 +9,49 @@ Welcome to the official repository of **Aokkai Everyday**, a student-led robotic
   ros2 launch turtlebot3_bringup rviz2.launch.py
 ```
 
+## Code for Bringup
+
+ssh (remote pc)
+```bash
+  ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
+```
+
+bring up (turtlebot3)
+```bash
+  ros2 launch turtlebot3_bringup robot.launch.py
+```
+show topic
+```bash
+  ros2 topic list
+```
+
+RViz
+```bash
+  ros2 launch turtlebot3_bringup rviz2.launch.py 
+```
+
+teleop (remote pc)
+```bash
+  ros2 run turtlebot3_teleop teleop_keyboard
+```
+## Code for SLAM
+ssh (remote pc)
+```bash
+  ssh ubuntu@{IP_ADDRESS_OF_RASPBERRY_PI}
+```
+
+bring up (turtlebot3)
+```bash
+  ros2 launch turtlebot3_bringup robot.launch.py
+```
+
+cartographer (remote pc)
+```bash
+  ros2 launch turtlebot3_cartographer cartographer.launch.py
+
+  ros2 run nav2_map_server map_saver_cli -f ~/map
+```
+
 
 ## Code for Gazebo
 install
